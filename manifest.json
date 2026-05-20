@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Return Chalmers Logo",
-  "version": "0.2",
+  "version": "0.3",
 
   "description": "Returns the old Chalmers logo and replaces the new one.",
 
@@ -20,7 +20,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.chalmers.se/*"],
+      "matches": ["*://*.chalmers.se/*", "*://login.microsoftonline.com/*"],
       "js": ["returnchalmers.js"]
     }
   ]
